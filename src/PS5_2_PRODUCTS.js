@@ -6,6 +6,9 @@ export const PS5_2_PRODUCTS = () => {
   const productMoreThan20 = () => {
     setData(data.filter(({ quantity }) => quantity > 20));
   };
+  const filterByPrice = () => {
+    setData(data.filter(({ price }) => price < 100));
+  };
 
   const getData = async () => {
     try {
@@ -27,6 +30,7 @@ export const PS5_2_PRODUCTS = () => {
       <button onClick={productMoreThan20}>
         Show products with qty more than 20
       </button>
+      <button onClick={filterByPrice}>FILTER by PRICE (lessthan100)</button>
       <ul>
         {data.map(({ name, price, quantity }) => {
           return (
