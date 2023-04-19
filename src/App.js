@@ -5,10 +5,8 @@ import { PS5_4_USERPROFILE } from "./PS5_4_USERPROFILE";
 import { PS5_5_USERFEED } from "./PS5_5_USERFEED";
 import { PS5_6_CHATS } from "./PS5_6_CHATS";
 import { PS5_7_COMMENTS } from "./PS5_7_COMMENTS";
-
-import { fakeFetch } from "./fakefetch";
-
 import { PS6_1_PRODUCT } from "./PS6_1_PRODUCT";
+import { PS6_2_TODOS } from "./PS6_2_TODOS";
 
 export default function App() {
   return (
@@ -24,6 +22,7 @@ export default function App() {
       <hr />
       <hr />
       <PS6_1_PRODUCT />
+      <PS6_2_TODOS />
     </div>
   );
 }
