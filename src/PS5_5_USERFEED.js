@@ -11,7 +11,6 @@ export const PS5_5_USERFEED = () => {
       if (response.status === 200) {
         setIsLoading(false);
         setData(response.data);
-        console.log(data);
       }
     } catch (e) {
       console.error(e);

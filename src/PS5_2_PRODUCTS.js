@@ -15,14 +15,12 @@ export const PS5_2_PRODUCTS = () => {
       const response = await fakeFetch("https://example.com/api/products");
       if (response.status === 200) {
         setData(response.data.products);
-        console.log(data);
       }
     } catch (e) {
       console.error(e);
     }
   };
   useEffect(() => {
-    console.log("tanay");
     getData();
   }, []);
   return (

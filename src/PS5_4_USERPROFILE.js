@@ -9,14 +9,12 @@ export const PS5_4_USERPROFILE = ({ heading, width, height }) => {
       const response = await fakeFetch("https://example.com/api/user");
       if (response.status === 200) {
         setData(response.data);
-        console.log(data);
       }
     } catch (e) {
       console.error(e);
     }
   };
   useEffect(() => {
-    console.log("useeffect");
     getData();
   }, []);
   const { name, image, likes, comments } = data;
